@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section id="landing">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account!</p>
+        <hr>
+        <form class="form" onsubmit="return formValidation()">
+            <input type="text" placeholder="First Name" id="firstName" onfocusout="validateFirstName()"><br><span id="nameMessage"></span><br>
+            <input type="text" placeholder="Last Name" id="lastName" onfocusout="validateLastName()"><br><span id="lastnameMessage"></span><br>
+            <input type="email" placeholder="Email" id="email"onfocusout="validateEmail()" ><br><span id="emailMessage"></span><br>
+            <input type="password" placeholder="Password" id="password" onfocusout="validatePassword()"><br><span id="passwordMessage"></span><br>
+            <input type="password" placeholder="Confirm Password" id="confirmPassword" onfocusout="validateConfirmPassword()"><br><span id="confirmMessage"></span><br>
+            <input type="checkbox" name="" id="privacyPolicy"> 
+            I accept the <a href=""> Terms of Use </a> & <a href=""> Privacy Policy </a> <br>
+            <button  id="btn">Sign Up</button>
+            
+        </form>
+    </section>
+<p style="color: white; text-align: center;">Already have an account? 
+<a href="../index.html" style="color: white; text-decoration: underline;">Login here</a> </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

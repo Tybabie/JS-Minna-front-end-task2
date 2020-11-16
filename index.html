@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="landing">
+        <h1>Log In</h1>
+        <hr>
+        <form class="form" onsubmit="return validateLogIn()">
+            <input type="email" placeholder="Email" id="email" id="email"onfocusout="validateEmail()" ><br><span id="emailMessage"></span><br>
+            <input type="password" placeholder="Password" id="password" onfocusout="validateLoginPassword()"><br><span id="passwordMessage"></span><br>
+            <button  id="btn">Log In</button>
+            
+        </form>
+    </section>
+<p style="color: white; text-align: center;">
+<a href="sign up/index.html" style="color: white; text-decoration: underline;">Sign Up here</a> to create an account</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
